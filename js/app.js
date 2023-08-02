@@ -87,7 +87,7 @@ function dynamicCache(data) {
 }
 
 function main() {
-  fetch("../js/products.json")
+  fetch("./products.json")
     .then((res) => {
       res.json().then((items) => {
         items.forEach((content) => {
