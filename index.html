@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Big Toy Shop</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
+    <meta name="theme-color" content="#fff" />
+    <link href="manifest.json" rel="manifest" />
+  </head>
+  <body>
+    <header class="container-fluid fixed-top d-flex justify-content-center">
+      <span>
+        <img src="./imgs/logo.png" />
+      </span>
+    </header>
+    <main class="container" id="products"></main>
+    <footer class="container-fluid fixed-bottom">
+      <div class="d-grid gap-2">
+        <button class="btn btn-warning" id="btnInstall" hidden>Install Store</button>
+      </div>
+    </footer>
+    <script>
+      if (!("serviceWorker" in navigator)) {
+        console.log("Service Worker not supported");
+      }
+      navigator.serviceWorker
+        .register("service-worker.js")
+        .then(function (registration) {
+          console.log("SW registred! Scope is: ", registration.scope);
+        });
+    </script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

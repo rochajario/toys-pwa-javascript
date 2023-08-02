@@ -1,0 +1,35 @@
+[
+  {
+    "category": "Funko Pop",
+    "products": [
+      {
+        "name": "Winter Soldier",
+        "price": "$ 100.00",
+        "description": "Marvel's Winter Soldier Funko Pop doll.",
+        "image": "./imgs/toys_001.jpg"
+      },
+      {
+        "name": "John Wick",
+        "price": "$ 100.00",
+        "description": "John Wick Funko Pop doll.",
+        "image": "./imgs/toys_002.jpg"
+      },
+      {
+        "name": "Lilo and Stitch",
+        "price": "$ 100.00",
+        "description": "Lilo and Stitch Funko Pop dolls.",
+        "image": "./imgs/toys_003.jpg"
+      },
+      {
+        "name": "Grogu - The Child",
+        "price": "$ 100.00",
+        "description": "Grogu - The Child Funko Pop doll.",
+        "image": "./imgs/toys_004.jpg"
+      }
+    ]
+  },
+  {
+    "category": "Action Figures",
+    "products": []
+  }
+]
